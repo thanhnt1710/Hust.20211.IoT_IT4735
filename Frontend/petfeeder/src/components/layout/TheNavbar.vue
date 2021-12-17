@@ -48,7 +48,7 @@ export default {
 .navbar {
   height: 100%;
   width: 210px;
-  background-color: #242e42;
+  background-color: var(--background-header-sidebar);
 }
 
 .navbar-item {

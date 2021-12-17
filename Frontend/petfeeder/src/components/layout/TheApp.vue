@@ -3,20 +3,27 @@
     <the-header></the-header>
     <div class="content flex">
       <the-navbar></the-navbar>
-      <router-view/>
+      <router-view />
+      <add-device v-if="formAddDevice"></add-device>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import TheHeader from "./TheHeader.vue";
 import TheNavbar from "./TheNavbar.vue";
+import AddDevice from "../../views/form/AddDevice.vue";
 
 export default {
   name: "TheApp",
   components: {
     TheHeader,
     TheNavbar,
+    AddDevice,
+  },
+  computed: {
+    ...mapState(['formAddDevice']),
   },
 };
 </script>
@@ -28,13 +35,9 @@ export default {
 :root {
   --white-color: #ffffff;
   --black-color: #000;
-  --main-color: #03ae66;
-  --active-navbar-color: #0dd469;
-  --focus-line-color: #cce8ff;
-  --hover-line-color: #e5f3ff;
-  --link-color: #0997eb;
-  --background-color: #eaecef;
-  --background-sidebar-color: #24344b;
+  --background-page: #f8f8f8;
+  --background-header-sidebar: #24344b;
+  --background-button-primary: #03ae66;
 }
 
 * {

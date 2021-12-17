@@ -2,11 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 //component
-import Dashboard from "../views/Dashboard.vue";
-import History from "../views/History.vue";
-import ManageDevice from "../views/ManageDevice.vue";
-import ManageUser from "../views/ManageUser.vue";
-import SettingFeed from "../views/SettingFeed.vue";
+import Dashboard from "../views/page/Dashboard.vue";
+import History from "../views/page/History.vue";
+import ManageDevice from "../views/page/ManageDevice.vue";
+import ManageUser from "../views/page/ManageUser.vue";
+import SettingFeed from "../views/page/SettingFeed.vue";
 
 Vue.use(VueRouter)
 

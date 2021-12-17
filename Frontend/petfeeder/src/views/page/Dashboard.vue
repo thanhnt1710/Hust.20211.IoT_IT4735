@@ -13,4 +13,7 @@ export default {
 </script>
 
 <style>
+.dashboard {
+  background-color: var(--background-page);
+}
 </style>
